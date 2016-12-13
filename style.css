@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.list-area {
+    display: block;
+    height: 350px;
+    width: 350px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin: 0px auto;
+    position: relative;
+    top: 10px;
+
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div.toggleAll, ul {
+    display: block;
+    width: 130px;
+    margin: 0px auto;
+    font-size: 20px;
+    border: 1px solid black;
+    padding : 3px;
+}
+
+li {
+    list-style: none;
+}
+
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"] + label{
+    background:url('img/checkbox.png') no-repeat;
+    background-size: 20px 20px;
+    height: 16px;
+    width: 16px;
+    padding: 1px 0 3px 30px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+input[type="checkbox"]:checked + label{
+    background:url('img/checkbox.png') no-repeat;
+    background-size: 20px 20px;
+    height: 16px;
+    width: 16px;
+    padding: 1px 0 3px 30px;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+input[type="checkbox"].partial + label{
+    background:url('img/partial.png') no-repeat;
+    background-size: 20px 20px;
+    height: 16px;
+    width: 16px;
+    padding: 1px 0 3px 30px;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+
+pre {
+    text-align: center;
+}

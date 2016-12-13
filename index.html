@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="fancyList">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fancy List</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="libs/angular.js"></script>
+        <script src="libs/angular-route.js"></script>
+        <script src="libs/checklist-model.js"></script>
+        <script src="app.js"></script>
+
+    </head>
+
+    <body ng-controller="MainCtrl">
+<!--
+        <input type="text" ng-model="color" placeholder="Enter a color" />
+        <hello-world  color="color" say-hello-isolated="sayHello()"></hello-world>
+-->
+        <checkbox-list items="pets" selected-items="selectedPets"></checkbox-list>
+
+
+    </body>
+</html>

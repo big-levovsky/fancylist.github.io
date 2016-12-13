@@ -1,0 +1,19 @@
+<div class="list-area">
+    <h2>Fancy List</h2>
+
+    <div class="toggleAll" >
+         <input type="checkbox" id="all" ng-model="isAllChecked" ng-click="toggleAll()" ng-class="{'partial': partial}" >
+         <label for="all">All/None</label>
+    </div>
+
+    <ul>
+        <li ng-repeat="item in items">
+            <input type="checkbox" id="{{item}}" checklist-model="selectedItems" checklist-value="item" ng-click="syncAllBtn()">
+            <label for="{{item}}">{{item}}</label>
+        </li>
+    </ul>
+
+    <br><br>
+    <pre>Selected items: {{selectedItems}}</pre>
+</div>
+
