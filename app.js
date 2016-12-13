@@ -6,7 +6,7 @@
     var app = angular.module("fancyList", ["checklist-model" ]);
 
     app.controller("MainCtrl", ["$scope",function($scope) {
-            $scope.pets = ["Cat", "Dog", "Fish", "bear"];
+            $scope.pets = ["Cat", "Dog", "Fish", "Bear"];
             $scope.selectedPets = [];
 
     }]);
