@@ -46,7 +46,7 @@
                     else if (scope.selectedItems.length == 0)
                         scope.isAllChecked = false;
 
-                    //if some of the items selected (partial) -> check with special color
+                    //if some of the items selected (partial) -> check with different img
                     else {
                         scope.isAllChecked = false;
                         scope.partial = true;
